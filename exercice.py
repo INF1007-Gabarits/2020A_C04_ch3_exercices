@@ -4,6 +4,11 @@
 
 import math
 
+def square_root(a: float) -> float:
+    return 0.0
+
+def square(a: float) -> float:
+    return 0.0
 
 def average(a: float, b: float, c: float) -> float:
     return 0.0
@@ -26,7 +31,11 @@ def to_farenheit(temperature: float) -> float:
 
 
 def main() -> None:
-    print(f"Moyenne des nombres 2, 4, 6: {average(2.1, 4.3, 6.5)}")
+    print(f"La racine carré de 144 est : {square_root(144)}")
+
+    print(f"Le carré de 12 est : {square(12)}")
+
+    print(f"Moyenne des nombres 2, 4, 6: {average(2, 4, 6)}")
 
     print(f"Conversion de 100 degres, 2 minutes et 45 secondes en radians: {to_radians(180, 2, 45)}")
     
