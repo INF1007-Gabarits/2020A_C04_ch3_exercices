@@ -10,6 +10,30 @@ import exercice
 
 
 class TestExercice(unittest.TestCase):
+    def test_square_root(self):
+        values = [12, 200, 20]
+
+        output = [exercice.square_root(v) for v in values]
+        answer = [math.sqrt(v) for v in values]
+
+        self.assertListEqual(
+            output,
+            answer,
+            'Mauvais calcul de la racine carré'
+        )
+
+    def test_square(self):
+        values = [12, 200, 20]
+
+        output = [exercice.square(v) for v in values]
+        answer = [v**2 for v in values]
+
+        self.assertListEqual(
+            output,
+            answer,
+            'Mauvais calcul du carré'
+        )
+
     def test_average(self):
         values = [
             (2, 4, 6),
