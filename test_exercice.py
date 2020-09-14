@@ -13,7 +13,7 @@ class TestExercice(unittest.TestCase):
     def test_square_root(self):
         values = [12, 200, 20]
 
-        output = [exercice.square_root(*v) for v in values]
+        output = [exercice.square_root(v) for v in values]
         answer = [math.sqrt(v) for v in values]
 
         self.assertListEqual(
@@ -25,7 +25,7 @@ class TestExercice(unittest.TestCase):
     def test_square(self):
         values = [12, 200, 20]
 
-        output = [exercice.square(*v) for v in values]
+        output = [exercice.square(v) for v in values]
         answer = [v**2 for v in values]
 
         self.assertListEqual(
